@@ -13,7 +13,7 @@ model = "./model/bvlc_googlenet.caffemodel"
 net = dnn.readNetFromCaffe(config, model)
 
 # 读图转张量
-img = cv2.imread("../chinacar.jpeg")
+img = cv2.imread("../smallcat.jpeg")
 blob = dnn.blobFromImage(img,
                          1.0,  # 缩放因子
                          (224, 224),  # 尺寸大小
